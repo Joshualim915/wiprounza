@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Enchanteur Contest 2026 | Win RM28,000 in Prizes!",
   description: "Join the Enchanteur contest! Purchase RM25+ and stand a chance to win RM28,000 in T&G vouchers plus 15 grand prizes.",
   icons: {
-    icon: "/wipro-logo.jpg",
+    icon: "/enchanteur-logo.jpg",
   },
 };
 
@@ -20,24 +20,22 @@ export default function Home() {
       {/* Header with Logo */}
       <header style={{
         background: "linear-gradient(135deg, #C41E3A 0%, #A01830 100%)",
-        padding: "1.5rem 1rem",
+        padding: "1.25rem 1rem",
         textAlign: "center",
         boxShadow: "0 4px 20px rgba(196, 30, 58, 0.3)",
       }}>
-        <h1 style={{
-          fontSize: "clamp(1.75rem, 5vw, 2.5rem)",
-          fontWeight: "600",
-          letterSpacing: "0.05em",
-          color: "white",
-          margin: 0,
-          textShadow: "0 2px 4px rgba(0,0,0,0.2)",
-        }}>
-          ✨ ENCHANTEUR ✨
-        </h1>
+        <img 
+          src="https://i.ibb.co/0yxNnkWH/enchanteur.jpg" 
+          alt="Enchanteur" 
+          style={{
+            height: "clamp(40px, 10vw, 60px)",
+            marginBottom: "0.5rem",
+          }}
+        />
         <p style={{
-          fontSize: "clamp(0.875rem, 2vw, 1rem)",
+          fontSize: "clamp(0.75rem, 2vw, 0.875rem)",
           color: "rgba(255,255,255,0.9)",
-          marginTop: "0.5rem",
+          margin: 0,
           fontStyle: "italic",
         }}>
           French-Inspired Female Self-Care
