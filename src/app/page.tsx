@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Wiprounza",
-  description: "Welcome to Wiprounza",
+  title: "Wipro Unza Malaysia",
+  description: "Welcome to Wipro Unza Malaysia",
 };
 
 export default function Home() {
@@ -14,21 +14,30 @@ export default function Home() {
       alignItems: "center",
       justifyContent: "center",
       fontFamily: "system-ui, -apple-system, sans-serif",
-      background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      background: "linear-gradient(135deg, #009945 0%, #006B3F 100%)",
       color: "white",
       padding: "2rem",
       textAlign: "center",
     }}>
+      <img 
+        src="https://wiprocci.com/unza_malaysia/wp-content/uploads/cropped-Wipro-logoM-1-1.jpg"
+        alt="Wipro Unza"
+        style={{
+          width: "280px",
+          height: "auto",
+          marginBottom: "2rem",
+        }}
+      />
       <h1 style={{
-        fontSize: "4rem",
+        fontSize: "3rem",
         fontWeight: "bold",
         marginBottom: "1rem",
-        letterSpacing: "-0.05em",
+        letterSpacing: "-0.02em",
       }}>
-        Wiprounza
+        Wipro Unza Malaysia
       </h1>
       <p style={{
-        fontSize: "1.5rem",
+        fontSize: "1.25rem",
         opacity: 0.9,
         maxWidth: "600px",
       }}>
