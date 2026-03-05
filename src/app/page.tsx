@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Enchanteur Contest 2026 | Win RM28,000 in Prizes!",
-  description: "Join the Enchanteur contest! Purchase RM25+ and stand a chance to win RM28,000 in T&G vouchers plus 15 grand prizes.",
+  title: "Enchanteur Contest 2026 | Shop & Win Enchanting Prizes",
+  description: "Purchase any Enchanteur product worth RM25 and stand a chance to win amazing prizes. Contest period: May 1-31, 2026.",
   icons: {
     icon: "/enchanteur-logo.png",
   },
@@ -12,391 +12,530 @@ export default function Home() {
   return (
     <div style={{
       minHeight: "100vh",
-      fontFamily: "'Playfair Display', 'Georgia', serif",
-      background: "linear-gradient(180deg, #FFF0F3 0%, #FFE4E9 30%, #FFD6E0 100%)",
-      color: "#1A1A1A",
+      fontFamily: "'Playfair Display', 'Outfit', 'Georgia', serif",
+      background: "#FAF5F3",
+      color: "#2D1A1F",
+      margin: 0,
       padding: 0,
     }}>
-      {/* Header with Logo */}
-      <header style={{
-        background: "linear-gradient(135deg, #C41E3A 0%, #A01830 100%)",
-        padding: "1.25rem 1rem",
-        textAlign: "center",
-        boxShadow: "0 4px 20px rgba(196, 30, 58, 0.3)",
-      }}>
-        <img 
-          src="https://i.ibb.co/tT37c7Ck/Enchanteur-logo.png" 
-          alt="Enchanteur" 
-          style={{
-            height: "clamp(40px, 10vw, 60px)",
-            background: "white",
-            borderRadius: "12px",
-            padding: "8px 16px",
-          }}
-        />
-        <p style={{
-          fontSize: "clamp(0.75rem, 2vw, 0.875rem)",
-          color: "rgba(255,255,255,0.9)",
-          margin: 0,
-          fontStyle: "italic",
-        }}>
-          French-Inspired Female Self-Care
-        </p>
-      </header>
-
-      {/* Banner Image Area */}
-      <div style={{
-        background: "linear-gradient(135deg, #C41E3A 0%, #8B1425 100%)",
-        padding: "3rem 1rem",
-        textAlign: "center",
+      {/* Hero Section */}
+      <section style={{
         position: "relative",
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
         overflow: "hidden",
       }}>
-        {/* Decorative hearts */}
+        {/* Background Image */}
         <div style={{
           position: "absolute",
-          top: "10%",
-          left: "5%",
-          fontSize: "2rem",
-          opacity: 0.2,
-        }}>💕</div>
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          zIndex: 0,
+        }}>
+          <img 
+            src="/hero-bg.jpg" 
+            alt="Enchanteur fragrance collection" 
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+          <div style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: "linear-gradient(to bottom, rgba(45,26,31,0.6) 0%, rgba(45,26,31,0.4) 50%, rgba(45,26,31,0.7) 100%)",
+          }} />
+        </div>
+
+        {/* Content */}
         <div style={{
-          position: "absolute",
-          top: "20%",
-          right: "10%",
-          fontSize: "1.5rem",
-          opacity: 0.15,
-        }}>🌹</div>
-        <div style={{
-          position: "absolute",
-          bottom: "15%",
-          left: "15%",
-          fontSize: "1.25rem",
-          opacity: 0.2,
-        }}>💗</div>
-        
-        <h2 style={{
-          fontSize: "clamp(1.75rem, 5vw, 2.75rem)",
-          fontWeight: "700",
-          color: "white",
-          marginBottom: "1rem",
           position: "relative",
-        }}>
-          💐 Contest 2026 💐
-        </h2>
-        <p style={{
-          fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
-          color: "rgba(255,255,255,0.95)",
-          maxWidth: "500px",
-          margin: "0 auto",
-        }}>
-          May 1 - 31, 2026
-        </p>
-      </div>
-
-      {/* Prize Hero Section */}
-      <section style={{
-        background: "white",
-        margin: "-2rem 1rem 2rem",
-        borderRadius: "20px",
-        padding: "2rem 1.5rem",
-        boxShadow: "0 10px 40px rgba(196, 30, 58, 0.15)",
-        position: "relative",
-        zIndex: 10,
-        maxWidth: "600px",
-        marginLeft: "auto",
-        marginRight: "auto",
-      }}>
-        <div style={{
+          zIndex: 10,
           textAlign: "center",
+          padding: "2rem",
+          maxWidth: "800px",
         }}>
-          <h3 style={{
-            fontSize: "clamp(1.5rem, 4vw, 2rem)",
-            fontWeight: "700",
-            color: "#C41E3A",
-            margin: 0,
+          <img 
+            src="/enchanteur-logo.svg" 
+            alt="Enchanteur" 
+            style={{
+              height: "clamp(48px, 8vw, 80px)",
+              marginBottom: "2rem",
+              filter: "brightness(0) invert(1)",
+            }}
+          />
+          
+          <p style={{
+            color: "rgba(255,255,255,0.7)",
+            fontFamily: "'Outfit', sans-serif",
+            fontSize: "clamp(0.75rem, 2vw, 0.875rem)",
+            letterSpacing: "0.3em",
+            textTransform: "uppercase",
+            marginBottom: "1rem",
           }}>
-            RM28,000 in Prizes!
-          </h3>
+            May 1 – 31, 2026
+          </p>
+
+          <h1 style={{
+            fontFamily: "'Playfair Display', serif",
+            fontSize: "clamp(2.5rem, 8vw, 4.5rem)",
+            color: "white",
+            lineHeight: 1.1,
+            marginBottom: "1.5rem",
+          }}>
+            Shop & Win <br />
+            <span style={{ fontStyle: "italic", color: "#E8C872" }}>Enchanting</span> Prizes
+          </h1>
+
+          <p style={{
+            color: "rgba(255,255,255,0.8)",
+            fontFamily: "'Outfit', sans-serif",
+            fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
+            maxWidth: "500px",
+            margin: "0 auto 2.5rem",
+            fontWeight: 300,
+          }}>
+            Purchase any Enchanteur product worth RM25 and stand a chance to win amazing prizes.
+          </p>
+
+          <a 
+            href="#how-to-participate"
+            style={{
+              display: "inline-block",
+              background: "#E8C872",
+              color: "#2D1A1F",
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: "0.875rem",
+              fontWeight: 500,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              padding: "1rem 2.5rem",
+              textDecoration: "none",
+              transition: "all 0.3s",
+            }}
+          >
+            How to Participate
+          </a>
         </div>
 
+        {/* Scroll Indicator */}
         <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gap: "1rem",
-          textAlign: "center",
+          position: "absolute",
+          bottom: "2rem",
+          left: "50%",
+          transform: "translateX(-50%)",
+          animation: "bounce 2s infinite",
         }}>
           <div style={{
-            padding: "1.5rem 0.5rem",
-            background: "linear-gradient(180deg, #FFF5F6 0%, #FFE8EC 100%)",
-            borderRadius: "16px",
-            border: "1px solid #FFD6E0",
-          }}>
-            <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>🏆</div>
-            <div style={{ fontSize: "1.5rem", fontWeight: "700", color: "#C41E3A" }}>15</div>
-            <div style={{ fontSize: "0.75rem", color: "#666" }}>Grand Prizes</div>
-          </div>
-          <div style={{
-            padding: "1.5rem 0.5rem",
-            background: "linear-gradient(180deg, #FFF5F6 0%, #FFE8EC 100%)",
-            borderRadius: "16px",
-            border: "1px solid #FFD6E0",
-          }}>
-            <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>💰</div>
-            <div style={{ fontSize: "1.5rem", fontWeight: "700", color: "#C41E3A" }}>RM28K</div>
-            <div style={{ fontSize: "0.75rem", color: "#666" }}>T&G Vouchers</div>
-          </div>
-          <div style={{
-            padding: "1.5rem 0.5rem",
-            background: "linear-gradient(180deg, #FFF5F6 0%, #FFE8EC 100%)",
-            borderRadius: "16px",
-            border: "1px solid #FFD6E0",
-          }}>
-            <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>⚡</div>
-            <div style={{ fontSize: "1.5rem", fontWeight: "700", color: "#C41E3A" }}>Instant</div>
-            <div style={{ fontSize: "0.75rem", color: "#666" }}>Credit</div>
-          </div>
+            width: "1px",
+            height: "48px",
+            background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.5))",
+          }} />
         </div>
       </section>
 
-      {/* Prize Cards */}
+      {/* Prizes Section */}
       <section style={{
-        padding: "0 1.5rem 2rem",
-        maxWidth: "600px",
-        margin: "0 auto 2rem",
+        padding: "6rem 1.5rem",
+        background: "#F5EDE8",
       }}>
-        <h4 style={{
-          fontSize: "1.25rem",
-          fontWeight: "600",
-          color: "#C41E3A",
-          textAlign: "center",
-          marginBottom: "1rem",
-        }}>
-          🎁 Consolation Prizes
-        </h4>
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(4, 1fr)",
-          gap: "0.75rem",
-        }}>
-          {[
-            { amount: "RM50", emoji: "🎖️" },
-            { amount: "RM20", emoji: "🥈" },
-            { amount: "RM10", emoji: "🥉" },
-            { amount: "RM5", emoji: "🎁" },
-          ].map((prize, i) => (
-            <div key={i} style={{
-              background: "white",
-              borderRadius: "12px",
-              padding: "1rem 0.5rem",
-              textAlign: "center",
-              boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
-              border: "2px solid transparent",
+        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+          <div style={{ textAlign: "center", marginBottom: "4rem" }}>
+            <p style={{
+              color: "#C9A85C",
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: "0.875rem",
+              letterSpacing: "0.3em",
+              textTransform: "uppercase",
+              marginBottom: "0.75rem",
             }}>
-              <div style={{ fontSize: "1.5rem", marginBottom: "0.25rem" }}>{prize.emoji}</div>
-              <div style={{ fontWeight: "700", color: "#C41E3A" }}>{prize.amount}</div>
+              What You Can Win
+            </p>
+            <h2 style={{
+              fontFamily: "'Playfair Display', serif",
+              fontSize: "clamp(2rem, 5vw, 3rem)",
+              color: "#2D1A1F",
+            }}>
+              Prizes
+            </h2>
+          </div>
+
+          {/* Grand Prize Card */}
+          <div style={{
+            background: "white",
+            border: "1px solid #E8DCD6",
+            borderRadius: "8px",
+            padding: "clamp(2rem, 5vw, 3.5rem)",
+            textAlign: "center",
+            marginBottom: "2rem",
+            position: "relative",
+          }}>
+            <div style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              height: "2px",
+              background: "linear-gradient(to right, transparent, #C9A85C, transparent)",
+            }} />
+            <div style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>🏆</div>
+            <p style={{
+              color: "#666",
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: "0.875rem",
+              letterSpacing: "0.2em",
+              textTransform: "uppercase",
+              marginBottom: "0.5rem",
+            }}>
+              Grand Prize
+            </p>
+            <h3 style={{
+              fontFamily: "'Playfair Display', serif",
+              fontSize: "clamp(1.5rem, 4vw, 2.5rem)",
+              color: "#2D1A1F",
+              marginBottom: "0.75rem",
+            }}>
+              15 Lucky Winners
+            </h3>
+            <p style={{
+              color: "#666",
+              fontFamily: "'Outfit', sans-serif",
+              fontWeight: 300,
+            }}>
+              Stand a chance to be one of the 15 grand prize winners.
+            </p>
+          </div>
+
+          {/* Consolation Prizes Card */}
+          <div style={{
+            background: "white",
+            border: "1px solid #E8DCD6",
+            borderRadius: "8px",
+            padding: "clamp(2rem, 5vw, 3.5rem)",
+            textAlign: "center",
+            position: "relative",
+          }}>
+            <div style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              height: "2px",
+              background: "linear-gradient(to right, transparent, #A83250, transparent)",
+            }} />
+            <div style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>🎁</div>
+            <p style={{
+              color: "#666",
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: "0.875rem",
+              letterSpacing: "0.2em",
+              textTransform: "uppercase",
+              marginBottom: "0.5rem",
+            }}>
+              Consolation Prizes
+            </p>
+            <h3 style={{
+              fontFamily: "'Playfair Display', serif",
+              fontSize: "clamp(1.5rem, 4vw, 2.5rem)",
+              color: "#2D1A1F",
+              marginBottom: "0.5rem",
+            }}>
+              T&G eWallet Vouchers
+            </h3>
+            <p style={{
+              color: "#666",
+              fontFamily: "'Outfit', sans-serif",
+              fontWeight: 300,
+              marginBottom: "2.5rem",
+            }}>
+              Total prize pool of <span style={{ color: "#2D1A1F", fontWeight: 500 }}>RM28,000</span> · Instant disbursement to winners
+            </p>
+
+            {/* Voucher Tiers */}
+            <div style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(4, 1fr)",
+              gap: "1rem",
+              maxWidth: "600px",
+              margin: "0 auto",
+            }}>
+              {["RM50", "RM20", "RM10", "RM5"].map((amount, i) => (
+                <div key={i} style={{
+                  border: "1px solid #E8DCD6",
+                  borderRadius: "8px",
+                  padding: "1.5rem 1rem",
+                  textAlign: "center",
+                  transition: "all 0.3s",
+                }}>
+                  <p style={{
+                    fontFamily: "'Playfair Display', serif",
+                    fontSize: "clamp(1.25rem, 3vw, 1.75rem)",
+                    color: "#2D1A1F",
+                  }}>
+                    {amount}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </section>
 
-      {/* How to Participate */}
-      <section style={{
-        background: "white",
-        margin: "0 1rem 2rem",
-        borderRadius: "20px",
-        padding: "2rem 1.5rem",
-        boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-        maxWidth: "600px",
-        marginLeft: "auto",
-        marginRight: "auto",
+      {/* How to Participate Section */}
+      <section id="how-to-participate" style={{
+        padding: "6rem 1.5rem",
+        background: "#FAF5F3",
       }}>
-        <h3 style={{
-          fontSize: "1.5rem",
-          fontWeight: "600",
-          color: "#C41E3A",
-          marginBottom: "1.5rem",
-          textAlign: "center",
-        }}>
-          📋 How to Participate
-        </h3>
-
-        <div style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "1rem",
-        }}>
-          {/* Step 1 */}
-          <div style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "1rem",
-            padding: "1.25rem",
-            background: "linear-gradient(135deg, #FFF5F6 0%, #FFE8EC 100%)",
-            borderRadius: "12px",
-            borderLeft: "4px solid #C41E3A",
-          }}>
-            <div style={{
-              width: "40px",
-              height: "40px",
-              background: "#C41E3A",
-              color: "white",
-              borderRadius: "50%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontWeight: "700",
-              fontSize: "1.25rem",
-              flexShrink: 0,
-            }}>1</div>
-            <div>
-              <div style={{ fontWeight: "600", color: "#1A1A1A" }}>Purchase RM25+ of Enchanteur</div>
-              <div style={{ fontSize: "0.875rem", color: "#666" }}>Any Enchanteur products</div>
-            </div>
+        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+          <div style={{ textAlign: "center", marginBottom: "4rem" }}>
+            <p style={{
+              color: "#C9A85C",
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: "0.875rem",
+              letterSpacing: "0.3em",
+              textTransform: "uppercase",
+              marginBottom: "0.75rem",
+            }}>
+              3 Simple Steps
+            </p>
+            <h2 style={{
+              fontFamily: "'Playfair Display', serif",
+              fontSize: "clamp(2rem, 5vw, 3rem)",
+              color: "#2D1A1F",
+            }}>
+              How to Participate
+            </h2>
           </div>
 
-          {/* Step 2 */}
           <div style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "1rem",
-            padding: "1.25rem",
-            background: "linear-gradient(135deg, #FFF5F6 0%, #FFE8EC 100%)",
-            borderRadius: "12px",
-            borderLeft: "4px solid #C41E3A",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            gap: "3rem",
           }}>
-            <div style={{
-              width: "40px",
-              height: "40px",
-              background: "#C41E3A",
-              color: "white",
-              borderRadius: "50%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontWeight: "700",
-              fontSize: "1.25rem",
-              flexShrink: 0,
-            }}>2</div>
-            <div>
-              <div style={{ fontWeight: "600", color: "#1A1A1A" }}>Include 1 Deodorant</div>
-              <div style={{ fontSize: "0.875rem", color: "#666" }}>Any Enchanteur Deodorant</div>
-            </div>
+            {[
+              { num: "01", img: "/step-purchase.jpg", title: "Purchase", desc: "Buy a minimum of RM25 worth of any Enchanteur product." },
+              { num: "02", img: "/step-scan.jpg", title: "Scan", desc: "Scan this QR code to participate or click on the link below." },
+              { num: "03", img: "/step-submit.jpg", title: "Submit", desc: "Fill in your details and upload a photo of your purchase receipt." },
+            ].map((step, i) => (
+              <div key={i} style={{ textAlign: "center" }}>
+                <div style={{ position: "relative", marginBottom: "2rem" }}>
+                  <span style={{
+                    fontFamily: "'Playfair Display', serif",
+                    fontSize: "5rem",
+                    color: "#E8DCD6",
+                    position: "absolute",
+                    top: "-1rem",
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    zIndex: 0,
+                  }}>
+                    {step.num}
+                  </span>
+                  <div style={{
+                    position: "relative",
+                    zIndex: 1,
+                    width: "160px",
+                    height: "160px",
+                    margin: "1.5rem auto 0",
+                    borderRadius: "16px",
+                    overflow: "hidden",
+                    boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
+                  }}>
+                    <img 
+                      src={step.img} 
+                      alt={step.title}
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    />
+                  </div>
+                </div>
+                <h3 style={{
+                  fontFamily: "'Playfair Display', serif",
+                  fontSize: "1.25rem",
+                  color: "#2D1A1F",
+                  marginBottom: "0.75rem",
+                }}>
+                  {step.title}
+                </h3>
+                <p style={{
+                  color: "#666",
+                  fontFamily: "'Outfit', sans-serif",
+                  fontWeight: 300,
+                  lineHeight: 1.6,
+                  maxWidth: "280px",
+                  margin: "0 auto",
+                }}>
+                  {step.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Submit Section */}
+      <section style={{
+        padding: "6rem 1.5rem",
+        background: "#F5EDE8",
+      }}>
+        <div style={{ maxWidth: "700px", margin: "0 auto" }}>
+          <div style={{ textAlign: "center", marginBottom: "3rem" }}>
+            <p style={{
+              color: "#C9A85C",
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: "0.875rem",
+              letterSpacing: "0.3em",
+              textTransform: "uppercase",
+              marginBottom: "0.75rem",
+            }}>
+              Ready to Win?
+            </p>
+            <h2 style={{
+              fontFamily: "'Playfair Display', serif",
+              fontSize: "clamp(2rem, 5vw, 3rem)",
+              color: "#2D1A1F",
+            }}>
+              Submit Your Receipt
+            </h2>
           </div>
 
-          {/* Step 3 - CTA */}
           <div style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "1rem",
-            padding: "1.5rem",
-            background: "linear-gradient(135deg, #10B981 0%, #059669 100%)",
-            borderRadius: "12px",
-            borderLeft: "4px solid #047857",
+            background: "white",
+            border: "1px solid #E8DCD6",
+            borderRadius: "8px",
+            padding: "clamp(2rem, 5vw, 3.5rem)",
+            textAlign: "center",
+            position: "relative",
           }}>
             <div style={{
-              width: "40px",
-              height: "40px",
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              height: "2px",
+              background: "linear-gradient(to right, transparent, #C9A85C, transparent)",
+            }} />
+
+            <p style={{
+              color: "#666",
+              fontFamily: "'Outfit', sans-serif",
+              fontWeight: 300,
+              marginBottom: "2.5rem",
+              maxWidth: "400px",
+              margin: "0 auto 2.5rem",
+            }}>
+              Scan the QR code below or tap the link to submit your purchase receipt and enter the contest.
+            </p>
+
+            {/* QR Code Placeholder */}
+            <div style={{
+              display: "inline-block",
               background: "white",
-              color: "#10B981",
-              borderRadius: "50%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontWeight: "700",
-              fontSize: "1.25rem",
-              flexShrink: 0,
-            }}>3</div>
-            <div style={{ flex: 1 }}>
-              <div style={{ fontWeight: "600", color: "white" }}>Upload Your Receipt</div>
-              <div style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.9)" }}>via TNG eWallet</div>
+              padding: "1.25rem",
+              borderRadius: "12px",
+              marginBottom: "2rem",
+              boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
+            }}>
+              <img 
+                src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://enchanteur.com.my/contest-submit" 
+                alt="QR Code"
+                style={{ width: "180px", height: "180px" }}
+              />
             </div>
-            <a 
-              href="https://tngdigital.com.my/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                padding: "0.75rem 1.5rem",
-                background: "white",
-                color: "#10B981",
-                borderRadius: "50px",
-                fontWeight: "700",
-                fontSize: "0.875rem",
-                textDecoration: "none",
-                whiteSpace: "nowrap",
-              }}
-            >
-              Upload 📱
-            </a>
+
+            <div>
+              <a 
+                href="https://enchanteur.com.my/contest-submit"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                  background: "#E8C872",
+                  color: "#2D1A1F",
+                  fontFamily: "'Outfit', sans-serif",
+                  fontSize: "0.875rem",
+                  fontWeight: 500,
+                  letterSpacing: "0.1em",
+                  textTransform: "uppercase",
+                  padding: "1rem 2.5rem",
+                  textDecoration: "none",
+                  transition: "all 0.3s",
+                }}
+              >
+                Submit Now ↗
+              </a>
+            </div>
           </div>
         </div>
-
-        <div style={{
-          marginTop: "1.5rem",
-          padding: "1rem",
-          background: "#FFF7ED",
-          borderRadius: "12px",
-          border: "1px solid #FED7AA",
-          textAlign: "center",
-        }}>
-          <span style={{ color: "#C2410C", fontWeight: "500", fontSize: "0.875rem" }}>
-            ⚠️ One entry per person (verified via T&G account)
-          </span>
-        </div>
-      </section>
-
-      {/* Terms & Conditions */}
-      <section style={{
-        background: "white",
-        margin: "0 1rem 2rem",
-        borderRadius: "20px",
-        padding: "2rem 1.5rem",
-        boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-        maxWidth: "600px",
-        marginLeft: "auto",
-        marginRight: "auto",
-      }}>
-        <h3 style={{
-          fontSize: "1.25rem",
-          fontWeight: "600",
-          color: "#C41E3A",
-          marginBottom: "1rem",
-          textAlign: "center",
-        }}>
-          📜 Terms & Conditions
-        </h3>
-        
-        <ol style={{
-          paddingLeft: "1.25rem",
-          fontSize: "0.8125rem",
-          color: "#4B5563",
-          lineHeight: "1.8",
-          margin: 0,
-        }}>
-          <li style={{ marginBottom: "0.5rem" }}>Minimum purchase of RM25 of any Enchanteur product</li>
-          <li style={{ marginBottom: "0.5rem" }}>One entry per person - verified via T&G account</li>
-          <li style={{ marginBottom: "0.5rem" }}>Receipt must be valid from the following retailer list</li>
-          <li style={{ marginBottom: "0.5rem" }}>Contest period: May 1 - 31, 2026</li>
-          <li style={{ marginBottom: "0.5rem" }}>Purchase must include at least 1 Enchanteur Deodorant</li>
-        </ol>
       </section>
 
       {/* Footer */}
       <footer style={{
-        background: "#1A1A1A",
-        padding: "2rem 1rem",
+        padding: "4rem 1.5rem",
+        background: "#2D1A1F",
         textAlign: "center",
       }}>
-        <p style={{ color: "white", marginBottom: "0.5rem", fontSize: "0.875rem" }}>
-          Powered by <strong>Buzz</strong> × <strong>Wipro Unza</strong>
+        <img 
+          src="/enchanteur-logo.svg" 
+          alt="Enchanteur" 
+          style={{
+            height: "32px",
+            marginBottom: "1.5rem",
+            filter: "brightness(0) invert(1)",
+          }}
+        />
+        <p style={{
+          color: "rgba(255,255,255,0.5)",
+          fontFamily: "'Outfit', sans-serif",
+          fontSize: "0.875rem",
+          marginBottom: "0.5rem",
+        }}>
+          Contest Period: May 1 – 31, 2026
         </p>
-        <p style={{ color: "#666", fontSize: "0.75rem" }}>
-          © 2026 Enchanteur. All rights reserved.
+        <p style={{
+          color: "rgba(255,255,255,0.4)",
+          fontFamily: "'Outfit', sans-serif",
+          fontSize: "0.75rem",
+        }}>
+          Terms & conditions apply. Prizes are given randomly via instant disbursement.
         </p>
+        <div style={{
+          marginTop: "2rem",
+          paddingTop: "2rem",
+          borderTop: "1px solid rgba(255,255,255,0.1)",
+        }}>
+          <a 
+            href="https://enchanteur.com.my/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "rgba(255,255,255,0.4)",
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: "0.75rem",
+              textDecoration: "none",
+              transition: "color 0.3s",
+            }}
+          >
+            enchanteur.com.my
+          </a>
+        </div>
       </footer>
 
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap');
+        @keyframes bounce {
+          0%, 100% { transform: translateX(-50%) translateY(0); }
+          50% { transform: translateX(-50%) translateY(10px); }
+        }
       `}</style>
     </div>
   );
