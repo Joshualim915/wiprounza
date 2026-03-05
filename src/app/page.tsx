@@ -29,7 +29,9 @@ export default function Home() {
           alt="Enchanteur" 
           style={{
             height: "clamp(40px, 10vw, 60px)",
-            marginBottom: "0.5rem",
+            background: "white",
+            borderRadius: "12px",
+            padding: "8px 16px",
           }}
         />
         <p style={{
@@ -97,10 +99,13 @@ export default function Home() {
         background: "white",
         margin: "-2rem 1rem 2rem",
         borderRadius: "20px",
-        padding: "2.5rem 1.5rem",
+        padding: "2rem 1.5rem",
         boxShadow: "0 10px 40px rgba(196, 30, 58, 0.15)",
         position: "relative",
         zIndex: 10,
+        maxWidth: "600px",
+        marginLeft: "auto",
+        marginRight: "auto",
       }}>
         <div style={{
           textAlign: "center",
@@ -171,7 +176,7 @@ export default function Home() {
       <section style={{
         padding: "0 1.5rem 2rem",
         maxWidth: "600px",
-        margin: "0 auto",
+        margin: "0 auto 2rem",
       }}>
         <h4 style={{
           fontSize: "1.25rem",
