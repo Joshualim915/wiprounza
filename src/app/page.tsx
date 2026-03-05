@@ -109,20 +109,7 @@ export default function Home() {
       }}>
         <div style={{
           textAlign: "center",
-          marginBottom: "2rem",
         }}>
-          <span style={{
-            display: "inline-block",
-            background: "linear-gradient(135deg, #FFD700 0%, #FFA500 100%)",
-            color: "#8B1425",
-            padding: "0.5rem 1.5rem",
-            borderRadius: "50px",
-            fontWeight: "600",
-            fontSize: "0.875rem",
-            marginBottom: "1rem",
-          }}>
-            🎉 LIMITED TIME OFFER
-          </span>
           <h3 style={{
             fontSize: "clamp(1.5rem, 4vw, 2rem)",
             fontWeight: "700",
@@ -379,23 +366,19 @@ export default function Home() {
           📜 Terms & Conditions
         </h3>
         
-        <ul style={{
+        <ol style={{
           paddingLeft: "1.25rem",
           fontSize: "0.8125rem",
           color: "#4B5563",
           lineHeight: "1.8",
           margin: 0,
         }}>
-          <li style={{ marginBottom: "0.5rem" }}>Contest period: May 1 - 31, 2026</li>
           <li style={{ marginBottom: "0.5rem" }}>Minimum purchase of RM25 of any Enchanteur product</li>
-          <li style={{ marginBottom: "0.5rem" }}>Purchase must include at least 1 Enchanteur Deodorant</li>
           <li style={{ marginBottom: "0.5rem" }}>One entry per person - verified via T&G account</li>
-          <li style={{ marginBottom: "0.5rem" }}>15 Grand Prize winners will be selected</li>
-          <li style={{ marginBottom: "0.5rem" }}>RM28,000 total pool of T&G vouchers</li>
-          <li style={{ marginBottom: "0.5rem" }}>Winnings credited instantly to winners</li>
-          <li style={{ marginBottom: "0.5rem" }}>Winner selection by random draw</li>
-          <li style={{ marginBottom: "0.5rem" }}>Organizer reserves the right to modify terms</li>
-        </ul>
+          <li style={{ marginBottom: "0.5rem" }}>Receipt must be valid from the following retailer list</li>
+          <li style={{ marginBottom: "0.5rem" }}>Contest period: May 1 - 31, 2026</li>
+          <li style={{ marginBottom: "0.5rem" }}>Purchase must include at least 1 Enchanteur Deodorant</li>
+        </ol>
       </section>
 
       {/* Footer */}
