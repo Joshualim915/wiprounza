@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Wipro Unza × Buzz | Coming Soon",
   description: "Wipro Unza × Buzz - Something exciting is coming",
+  icons: {
+    icon: "/wipro-logo.jpg",
+  },
 };
 
 export default function Home() {
