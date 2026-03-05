@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Enchanteur Contest 2026 | Win RM28,000 in Prizes!",
   description: "Join the Enchanteur contest! Purchase RM25+ and stand a chance to win RM28,000 in T&G vouchers plus 15 grand prizes.",
   icons: {
-    icon: "/enchanteur-logo.jpg",
+    icon: "/enchanteur-logo.png",
   },
 };
 
@@ -25,7 +25,7 @@ export default function Home() {
         boxShadow: "0 4px 20px rgba(196, 30, 58, 0.3)",
       }}>
         <img 
-          src="https://i.ibb.co/0yxNnkWH/enchanteur.jpg" 
+          src="https://i.ibb.co/tT37c7Ck/Enchanteur-logo.png" 
           alt="Enchanteur" 
           style={{
             height: "clamp(40px, 10vw, 60px)",
