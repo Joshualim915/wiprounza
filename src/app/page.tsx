@@ -132,7 +132,6 @@ export default function Home() {
           }}>
             <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>🎖️</div>
             <div style={{ fontSize: "1.5rem", fontWeight: "700", color: "#BE185D" }}>RM50</div>
-            <div style={{ fontSize: "0.75rem", color: "#831843" }}>5% chance</div>
           </div>
           <div style={{
             background: "linear-gradient(135deg, #FDF2F8 0%, #FCE7F3 100%)",
@@ -143,7 +142,6 @@ export default function Home() {
           }}>
             <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>🥈</div>
             <div style={{ fontSize: "1.5rem", fontWeight: "700", color: "#BE185D" }}>RM20</div>
-            <div style={{ fontSize: "0.75rem", color: "#831843" }}>15% chance</div>
           </div>
           <div style={{
             background: "linear-gradient(135deg, #FDF2F8 0%, #FCE7F3 100%)",
@@ -154,7 +152,6 @@ export default function Home() {
           }}>
             <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>🥉</div>
             <div style={{ fontSize: "1.5rem", fontWeight: "700", color: "#BE185D" }}>RM10</div>
-            <div style={{ fontSize: "0.75rem", color: "#831843" }}>30% chance</div>
           </div>
           <div style={{
             background: "linear-gradient(135deg, #FDF2F8 0%, #FCE7F3 100%)",
@@ -165,7 +162,6 @@ export default function Home() {
           }}>
             <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>🎁</div>
             <div style={{ fontSize: "1.5rem", fontWeight: "700", color: "#BE185D" }}>RM5</div>
-            <div style={{ fontSize: "0.75rem", color: "#831843" }}>50% chance</div>
           </div>
         </div>
       </section>
@@ -196,15 +192,15 @@ export default function Home() {
           {[
             { num: "1", title: "Purchase RM25+ of Enchanteur", desc: "Buy any Enchanteur products worth minimum RM25" },
             { num: "2", title: "Include 1 Deodorant", desc: "Your purchase must include at least 1 Enchanteur Deodorant" },
-            { num: "3", title: "Verify via T&G Account", desc: "Log in with your T&G account to verify your entry" },
+            { num: "3", title: "Upload Receipt on TNG eWallet", desc: "Click the button below to upload your receipt", isButton: true },
           ].map((step, i) => (
             <li key={i} style={{
               display: "flex",
               alignItems: "flex-start",
               gap: "1rem",
               marginBottom: "1.25rem",
-              padding: "1rem",
-              background: i === 2 ? "linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%)" : "#FDF2F8",
+              padding: step.isButton ? "1.5rem" : "1rem",
+              background: step.isButton ? "linear-gradient(135deg, #10B981 0%, #059669 100%)" : (i === 2 ? "linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%)" : "#FDF2F8"),
               borderRadius: "12px",
             }}>
               <span style={{
@@ -213,8 +209,8 @@ export default function Home() {
                 justifyContent: "center",
                 width: "36px",
                 height: "36px",
-                background: "#BE185D",
-                color: "white",
+                background: step.isButton ? "white" : "#BE185D",
+                color: step.isButton ? "#10B981" : "white",
                 borderRadius: "50%",
                 fontWeight: "700",
                 fontSize: "1rem",
@@ -222,13 +218,34 @@ export default function Home() {
               }}>
                 {step.num}
               </span>
-              <div>
-                <div style={{ fontWeight: "600", color: "#1A1A1A", marginBottom: "0.25rem" }}>
+              <div style={{ flex: 1 }}>
+                <div style={{ fontWeight: "600", color: step.isButton ? "white" : "#1A1A1A", marginBottom: "0.25rem" }}>
                   {step.title}
                 </div>
-                <div style={{ fontSize: "0.875rem", color: "#666" }}>
+                <div style={{ fontSize: step.isButton ? "1rem" : "0.875rem", color: step.isButton ? "rgba(255,255,255,0.9)" : "#666" }}>
                   {step.desc}
                 </div>
+                {step.isButton && (
+                  <a 
+                    href="https://tngdigital.com.my/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-block",
+                      marginTop: "1rem",
+                      padding: "0.875rem 2rem",
+                      background: "white",
+                      color: "#10B981",
+                      borderRadius: "50px",
+                      fontWeight: "700",
+                      fontSize: "1rem",
+                      textDecoration: "none",
+                      boxShadow: "0 4px 15px rgba(0,0,0,0.2)",
+                    }}
+                  >
+                    📱 Upload Receipt Now
+                  </a>
+                )}
               </div>
             </li>
           ))}
@@ -279,7 +296,6 @@ export default function Home() {
           <li style={{ marginBottom: "0.75rem" }}>One entry per person - verified via T&G (Taste & Gourmet) account</li>
           <li style={{ marginBottom: "0.75rem" }}>Grand Prize: 15 winners will be selected</li>
           <li style={{ marginBottom: "0.75rem" }}>Consolation prizes: RM28,000 total pool of T&G vouchers</li>
-          <li style={{ marginBottom: "0.75rem" }}>Voucher values randomized: RM5 (50%), RM10 (30%), RM20 (15%), RM50 (5%)</li>
           <li style={{ marginBottom: "0.75rem" }}>Winnings will be credited instantly to winners' T&G accounts</li>
           <li style={{ marginBottom: "0.75rem" }}>Winner selection based on random draw from eligible entries</li>
           <li style={{ marginBottom: "0.75rem" }}>Organizer reserves the right to modify terms without prior notice</li>
