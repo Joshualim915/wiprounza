@@ -14,47 +14,11 @@ export default function Home() {
       alignItems: "center",
       justifyContent: "center",
       fontFamily: "'Literata', 'Georgia', serif",
-      background: "linear-gradient(135deg, #FFF8F3 0%, #FFE8E0 50%, #FFD6C8 100%)",
+      background: "linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 50%, #DDD6FE 100%)",
       color: "#1A1A1A",
       padding: "2rem",
       textAlign: "center",
     }}>
-      {/* Logo Section */}
-      <div style={{
-        display: "flex",
-        alignItems: "center",
-        gap: "1.5rem",
-        marginBottom: "3rem",
-      }}>
-        <img 
-          src="https://wiprocci.com/unza_malaysia/wp-content/uploads/cropped-Wipro-logoM-1-1.jpg"
-          alt="Wipro Unza"
-          style={{
-            width: "120px",
-            height: "auto",
-          }}
-        />
-        <span style={{
-          fontSize: "2rem",
-          color: "#9CA3AF",
-          fontWeight: "300",
-        }}>×</span>
-        <div style={{
-          width: "80px",
-          height: "80px",
-          borderRadius: "20px",
-          background: "linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          fontSize: "2rem",
-          color: "white",
-          fontWeight: "bold",
-        }}>
-          B
-        </div>
-      </div>
-
       {/* Main Content */}
       <h1 style={{
         fontSize: "clamp(2rem, 5vw, 3.5rem)",
@@ -65,7 +29,7 @@ export default function Home() {
         color: "#1A1A1A",
       }}>
         Wipro Unza <span style={{
-          background: "linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)",
+          background: "linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
         }}>×</span> Buzz
@@ -91,14 +55,14 @@ export default function Home() {
         background: "white",
         padding: "1rem 2rem",
         borderRadius: "50px",
-        boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08)",
-        border: "1px solid rgba(0, 0, 0, 0.05)",
+        boxShadow: "0 4px 20px rgba(139, 92, 246, 0.15)",
+        border: "1px solid rgba(139, 92, 246, 0.1)",
       }}>
         <span style={{
           width: "10px",
           height: "10px",
           borderRadius: "50%",
-          background: "#FF6B6B",
+          background: "linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%)",
           animation: "pulse 2s infinite",
         }} />
         <span style={{
@@ -120,7 +84,7 @@ export default function Home() {
         width: "150px",
         height: "150px",
         borderRadius: "50%",
-        background: "linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(255, 142, 83, 0.1) 100%)",
+        background: "linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(168, 85, 247, 0.15) 100%)",
         filter: "blur(40px)",
       }} />
       <div style={{
@@ -130,7 +94,7 @@ export default function Home() {
         width: "200px",
         height: "200px",
         borderRadius: "50%",
-        background: "linear-gradient(135deg, rgba(255, 142, 83, 0.1) 0%, rgba(255, 107, 107, 0.1) 100%)",
+        background: "linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%)",
         filter: "blur(60px)",
       }} />
 
