@@ -25,7 +25,7 @@ export default function Home() {
         order: 1,
         position: "relative",
         minHeight: "100vh",
-        background: "#000",
+        background: "#ffdf43",
         overflow: "hidden",
       }}>
         {/* Background Image */}
@@ -46,10 +46,21 @@ export default function Home() {
               height: "100%",
               objectFit: "cover",
               objectPosition: "center top",
-              background: "#000",
+              background: "#ffdf43",
             }}
           />
         </div>
+
+        <div className="heroImageSeamFade" style={{
+          position: "absolute",
+          left: 0,
+          right: 0,
+          bottom: 0,
+          height: "clamp(150px, 26vh, 250px)",
+          background: "linear-gradient(to top, rgba(255,223,67,0.99) 0%, rgba(255,223,67,0.96) 60%, rgba(255,223,67,0.86) 78%, rgba(255,223,67,0) 100%)",
+          zIndex: 1,
+          pointerEvents: "none",
+        }} />
 
         {/* Bottom Content Overlay */}
         <div className="heroBottomOverlay" style={{
@@ -59,15 +70,16 @@ export default function Home() {
           bottom: 0,
           zIndex: 10,
           padding: "clamp(1.5rem, 4vw, 3rem) 1.25rem 2rem",
-          background: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.72) 36%, rgba(0,0,0,0) 100%)",
+          background: "linear-gradient(to top, rgba(255,223,67,0.99) 0%, rgba(255,223,67,0.99) 58%, rgba(255,223,67,0.9) 78%, rgba(255,223,67,0) 100%)",
         }}>
           <div className="heroBottomContent" style={{
             maxWidth: "900px",
             margin: "0 auto",
             textAlign: "center",
+            transform: "translateY(6px)",
           }}>
             <p className="heroPeriod" style={{
-              color: "rgba(255,255,255,0.78)",
+              color: "#5A3518",
               fontFamily: "'Outfit', sans-serif",
               fontSize: "clamp(0.72rem, 1.8vw, 0.85rem)",
               letterSpacing: "0.26em",
@@ -80,13 +92,14 @@ export default function Home() {
             <h1 className="heroTitle" style={{
               fontFamily: "'Playfair Display', serif",
               fontSize: "clamp(1.6rem, 4.8vw, 2.7rem)",
-              color: "white",
+              color: "#3B230F",
               lineHeight: 1.15,
-              marginBottom: "0.75rem",
+              marginBottom: "1.2rem",
+              textShadow: "0 1px 0 rgba(255,255,255,0.2)",
             }}>
               Shop & Win
               <br />
-              <span style={{ fontStyle: "italic", color: "#E8C872" }}>Enchanting Prizes</span>
+              <span style={{ fontStyle: "italic", color: "#5A3518" }}>Enchanting Prizes</span>
             </h1>
 
             <a
@@ -160,20 +173,21 @@ export default function Home() {
                 <p style={{
                   fontFamily: "'Outfit', sans-serif",
                   color: "#1A1114",
-                  fontSize: "clamp(0.8rem, 2vw, 0.95rem)",
+                  fontSize: "clamp(1rem, 2.7vw, 1.25rem)",
                   letterSpacing: "0.12em",
                   textTransform: "uppercase",
-                  fontWeight: 600,
-                  marginBottom: "0.15rem",
+                  fontWeight: 700,
+                  marginBottom: "0.25rem",
                 }}>
                   Menang Hadiah Sejumlah
                 </p>
                 <h2 style={{
                   fontFamily: "'Playfair Display', serif",
                   color: "#0E0A0B",
-                  fontSize: "clamp(2.1rem, 9vw, 4rem)",
+                  fontSize: "clamp(2.8rem, 11vw, 5rem)",
+                  fontWeight: 800,
                   lineHeight: 1,
-                  marginBottom: "0.4rem",
+                  marginBottom: "0.45rem",
                 }}>
                   RM45,000!
                 </h2>
@@ -202,18 +216,21 @@ export default function Home() {
                     width: "100%",
                     height: "92px",
                     borderRadius: "10px",
-                    border: "2px dashed rgba(17, 12, 13, 0.4)",
-                    background: "rgba(255,255,255,0.45)",
+                    background: "rgba(255,255,255,0.3)",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    fontFamily: "'Outfit', sans-serif",
-                    fontSize: "0.86rem",
-                    fontWeight: 600,
-                    color: "#332128",
                     marginBottom: "0.85rem",
                   }}>
-                    Prize Image 1
+                    <img
+                      src="/grand-prize.png"
+                      alt="Grand prize"
+                      style={{
+                        maxWidth: "100%",
+                        maxHeight: "100%",
+                        objectFit: "contain",
+                      }}
+                    />
                   </div>
                   <p style={{
                     fontFamily: "'Outfit', sans-serif",
@@ -281,102 +298,118 @@ export default function Home() {
                 background: "#F3F3F3",
                 borderRadius: "16px",
                 border: "1px solid rgba(0,0,0,0.12)",
-                padding: "0.9rem",
-                display: "grid",
-                gridTemplateColumns: "30% 70%",
-                gap: "0.75rem",
-                alignItems: "end",
-                minHeight: "220px",
+                padding: "1rem 0.85rem 0.85rem",
+                position: "relative",
+                marginTop: "4.5rem",
+                overflow: "visible",
               }}>
                 <img
-                  src="/enchanteur-deo.jpeg"
+                  src="/enchanteur-deodarant-prize-section.PNG"
                   alt="Enchanteur deodorant"
                   style={{
-                    width: "100%",
-                    height: "clamp(180px, 34vw, 230px)",
+                    width: "clamp(185px, 48vw, 250px)",
+                    height: "clamp(270px, 60vw, 380px)",
                     objectFit: "contain",
                     objectPosition: "center bottom",
                     background: "transparent",
                     borderRadius: 0,
+                    position: "absolute",
+                    top: "-9rem",
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    zIndex: 2,
                   }}
                 />
 
-                <div style={{ display: "grid", gap: "0.85rem" }}>
-                  <div style={{ display: "flex", alignItems: "flex-start", gap: "0.55rem" }}>
-                    <span style={{
-                      width: "34px",
-                      height: "34px",
-                      borderRadius: "999px",
-                      background: "#F7C600",
-                      color: "#111",
-                      fontFamily: "'Outfit', sans-serif",
-                      fontWeight: 700,
-                      display: "inline-flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      flexShrink: 0,
-                    }}>
-                      1
-                    </span>
-                    <p style={{
-                      fontFamily: "'Outfit', sans-serif",
-                      color: "#121212",
-                      fontSize: "clamp(1.05rem, 2.6vw, 1.55rem)",
-                      lineHeight: 1.2,
-                      fontWeight: 800,
-                    }}>
-                      Beli produk Enchanteur bernilai RM25 <span style={{ fontWeight: 500 }}>dalam satu resit (termasuk 1 unit deodoran)</span>
-                    </p>
-                  </div>
-
-                  <div style={{ display: "grid", gridTemplateColumns: "34px 74px 1fr", gap: "0.55rem", alignItems: "center" }}>
-                    <span style={{
-                      width: "34px",
-                      height: "34px",
-                      borderRadius: "999px",
-                      background: "#F7C600",
-                      color: "#111",
-                      fontFamily: "'Outfit', sans-serif",
-                      fontWeight: 700,
-                      display: "inline-flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}>
-                      2
-                    </span>
-                    <img
-                      src="/WiproUnza%20x%20Buzz_QR%20Code.jpeg"
-                      alt="QR code"
-                      style={{
-                        width: "74px",
-                        height: "74px",
-                        objectFit: "cover",
-                        borderRadius: "6px",
-                        border: "1px solid rgba(0,0,0,0.12)",
-                        background: "#fff",
-                      }}
-                    />
-                    <p style={{
-                      fontFamily: "'Outfit', sans-serif",
-                      color: "#121212",
-                      fontSize: "clamp(1.05rem, 2.6vw, 1.55rem)",
-                      lineHeight: 1.15,
-                      fontWeight: 800,
-                    }}>
-                      Imbas kod QR <span style={{ fontWeight: 500 }}>untuk hantar resit</span>
-                    </p>
-                  </div>
-
-                  <p style={{
-                    fontFamily: "'Outfit', sans-serif",
-                    color: "#6E6E6E",
-                    fontSize: "0.78rem",
-                    fontWeight: 500,
-                    marginTop: "0.15rem",
+                <div style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr",
+                  gap: "0.65rem",
+                  marginTop: "7rem",
+                }}>
+                  <div style={{
+                    background: "#FFFFFF",
+                    borderRadius: "10px",
+                    padding: "0.7rem",
+                    border: "1px solid rgba(0,0,0,0.1)",
                   }}>
-                    *Tertakluk terma & syarat
-                  </p>
+                    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", minHeight: "64px" }}>
+                      <span style={{
+                        width: "28px",
+                        height: "28px",
+                        borderRadius: "999px",
+                        background: "#F7C600",
+                        color: "#111",
+                        fontFamily: "'Outfit', sans-serif",
+                        fontWeight: 700,
+                        fontSize: "0.88rem",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                      }}>
+                        1
+                      </span>
+                      <p style={{
+                        fontFamily: "'Outfit', sans-serif",
+                        color: "#121212",
+                        fontSize: "clamp(0.76rem, 1.9vw, 0.88rem)",
+                        lineHeight: 1.25,
+                        fontWeight: 700,
+                        margin: 0,
+                      }}>
+                        Beli produk Enchanteur bernilai RM25 dalam satu resit (termasuk 1 unit deodoran)
+                      </p>
+                    </div>
+                  </div>
+
+                  <div style={{
+                    background: "#FFFFFF",
+                    borderRadius: "10px",
+                    padding: "0.7rem",
+                    border: "1px solid rgba(0,0,0,0.1)",
+                  }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", minHeight: "64px" }}>
+                      <span style={{
+                        width: "28px",
+                        height: "28px",
+                        borderRadius: "999px",
+                        background: "#F7C600",
+                        color: "#111",
+                        fontFamily: "'Outfit', sans-serif",
+                        fontWeight: 700,
+                        fontSize: "0.88rem",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                      }}>
+                        2
+                      </span>
+                      <p style={{
+                        fontFamily: "'Outfit', sans-serif",
+                        color: "#121212",
+                        fontSize: "clamp(0.76rem, 1.9vw, 0.88rem)",
+                        lineHeight: 1.25,
+                        fontWeight: 700,
+                        margin: 0,
+                      }}>
+                        Imbas kod QR untuk hantar resit
+                      </p>
+                    </div>
+                  </div>
                 </div>
+
+                <p style={{
+                  fontFamily: "'Outfit', sans-serif",
+                  color: "#6E6E6E",
+                  fontSize: "0.72rem",
+                  fontWeight: 500,
+                  marginTop: "0.55rem",
+                  textAlign: "center",
+                }}>
+                  *Tertakluk terma & syarat
+                </p>
               </div>
             </div>
           </div>
@@ -479,20 +512,10 @@ export default function Home() {
       {/* Submit Section */}
       <section id="submit-section" style={{
         order: 2,
-        padding: "3.8rem 1.5rem 2.4rem",
-        background: "linear-gradient(to bottom, #0A0A0A 0%, #2A2624 12%, #F5EDE8 32%, #F5EDE8 100%)",
+        padding: "2.8rem 1.5rem 2.1rem",
+        background: "linear-gradient(to bottom, #ffdf43 0%, #ffdf43 56%, rgba(255,223,67,0.7) 70%, rgba(245,237,232,0.96) 88%, #F5EDE8 100%)",
       }}>
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-            <h2 style={{
-              fontFamily: "'Playfair Display', serif",
-              fontSize: "clamp(2rem, 5vw, 3rem)",
-              color: "#2D1A1F",
-            }}>
-              Submit Your Receipt
-            </h2>
-          </div>
-
           <div style={{
             background: "white",
             border: "1px solid #E8DCD6",
@@ -631,23 +654,29 @@ export default function Home() {
             object-fit: contain !important;
             object-position: center top !important;
           }
+          .heroImageSeamFade {
+            height: clamp(140px, 24vh, 220px) !important;
+            background: linear-gradient(to top, rgba(255,223,67,0.995) 0%, rgba(255,223,67,0.97) 60%, rgba(255,223,67,0.9) 80%, rgba(255,223,67,0) 100%) !important;
+          }
           .heroBottomOverlay {
-            min-height: clamp(220px, 34vh, 300px) !important;
+            min-height: clamp(160px, 24vh, 215px) !important;
             display: flex !important;
             align-items: flex-end !important;
-            padding: 0.45rem 1rem 1.05rem !important;
-            background: linear-gradient(to top, rgba(0,0,0,0.995) 0%, rgba(0,0,0,0.97) 28%, rgba(0,0,0,0.9) 52%, rgba(0,0,0,0.55) 74%, rgba(0,0,0,0.14) 90%, rgba(0,0,0,0) 100%) !important;
+            padding: 0.3rem 1rem 0.75rem !important;
+            background: linear-gradient(to top, rgba(255,223,67,0.995) 0%, rgba(255,223,67,0.995) 56%, rgba(255,223,67,0.92) 78%, rgba(255,223,67,0) 100%) !important;
           }
           .heroBottomContent {
             max-width: 520px !important;
+            transform: translateY(14px) !important;
           }
           .heroPeriod {
-            margin-bottom: 0.22rem !important;
+            margin-bottom: 0.42rem !important;
+            transform: translateY(0) !important;
           }
           .heroTitle {
             font-size: clamp(1.45rem, 7vw, 2.1rem) !important;
             line-height: 1.03 !important;
-            margin-bottom: 0.38rem !important;
+            margin-bottom: 0.92rem !important;
           }
           .heroCtaDesktop { display: none; }
           .heroCtaMobile { display: inline-block; }
