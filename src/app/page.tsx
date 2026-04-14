@@ -28,28 +28,39 @@ export default function Home() {
         background: "#ffdf43",
         overflow: "hidden",
       }}>
-        {/* Background Image */}
-        <div style={{
+        {/* Background Image - Mobile */}
+        <img 
+          className="heroBgImage"
+          src="/hero-bg-deodoran-mobile.jpg" 
+          alt="Enchanteur fragrance collection" 
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center top",
+            background: "#ffdf43",
+            zIndex: 0,
+          }}
+        />
+
+        {/* Background Image - Desktop */}
+        <div className="heroBgDesktop" style={{
           position: "absolute",
           top: 0,
           left: 0,
           right: 0,
           bottom: 0,
+          backgroundImage: "url('/hero-bg-deodoran.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+          backgroundRepeat: "no-repeat",
+          backgroundColor: "#ffdf43",
           zIndex: 0,
-        }}>
-          <img 
-            className="heroBgImage"
-            src="/hero-bg-deodoran-mobile.jpg" 
-            alt="Enchanteur fragrance collection" 
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              objectPosition: "center top",
-              background: "#ffdf43",
-            }}
-          />
-        </div>
+          display: "none",
+        }} />
 
         <div className="heroImageSeamFade" style={{
           position: "absolute",
@@ -118,7 +129,7 @@ export default function Home() {
                 transition: "all 0.3s",
               }}
             >
-              Submit Here
+              Hantar Resit
             </a>
             <a
               className="heroCta heroCtaMobile"
@@ -138,7 +149,7 @@ export default function Home() {
                 transition: "all 0.3s",
               }}
             >
-              Submit Here
+              Hantar Resit
             </a>
           </div>
         </div>
@@ -223,7 +234,7 @@ export default function Home() {
                     marginBottom: "0.85rem",
                   }}>
                     <img
-                      src="/grand-prize.png"
+                      src="/enchanteur-grand-prize.png"
                       alt="Grand prize"
                       style={{
                         maxWidth: "100%",
@@ -261,18 +272,21 @@ export default function Home() {
                     width: "100%",
                     height: "92px",
                     borderRadius: "10px",
-                    border: "2px dashed rgba(17, 12, 13, 0.4)",
-                    background: "rgba(255,255,255,0.45)",
+                    background: "rgba(255,255,255,0.3)",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    fontFamily: "'Outfit', sans-serif",
-                    fontSize: "0.86rem",
-                    fontWeight: 600,
-                    color: "#332128",
                     marginBottom: "0.85rem",
                   }}>
-                    Prize Image 2
+                    <img
+                      src="/enchanteur-consolation-prize.png"
+                      alt="Consolation prize"
+                      style={{
+                        maxWidth: "100%",
+                        maxHeight: "100%",
+                        objectFit: "contain",
+                      }}
+                    />
                   </div>
                   <p style={{
                     fontFamily: "'Outfit', sans-serif",
@@ -304,6 +318,7 @@ export default function Home() {
                 overflow: "visible",
               }}>
                 <img
+                  className="prizeDeodorantImg"
                   src="/enchanteur-deodarant-prize-section.PNG"
                   alt="Enchanteur deodorant"
                   style={{
@@ -321,16 +336,16 @@ export default function Home() {
                   }}
                 />
 
-                <div style={{
+                <div className="prizeInstructionBox" style={{
                   display: "grid",
                   gridTemplateColumns: "1fr",
                   gap: "0.65rem",
                   marginTop: "7rem",
                 }}>
-                  <div style={{
+                  <div className="prizeInstructionItem" style={{
                     background: "#FFFFFF",
                     borderRadius: "10px",
-                    padding: "0.7rem",
+                    padding: "1.2rem 0.7rem",
                     border: "1px solid rgba(0,0,0,0.1)",
                   }}>
                     <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", minHeight: "64px" }}>
@@ -363,10 +378,10 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div style={{
+                  <div className="prizeInstructionItem" style={{
                     background: "#FFFFFF",
                     borderRadius: "10px",
-                    padding: "0.7rem",
+                    padding: "1.2rem 0.7rem",
                     border: "1px solid rgba(0,0,0,0.1)",
                   }}>
                     <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", minHeight: "64px" }}>
@@ -541,7 +556,7 @@ export default function Home() {
               maxWidth: "400px",
               margin: "0 auto 2.5rem",
             }}>
-              Beli produk Enchanteur bernilai RM25 dalam satu resit (termasuk 1 unit deodoran). Imbas kod QR untuk hantar resit.
+              <span className="qrInstructionText">Beli produk Enchanteur bernilai RM25 dalam satu resit (termasuk 1 unit deodoran). Imbas kod QR untuk hantar resit.</span>
             </p>
 
             {/* QR Code Placeholder */}
@@ -581,7 +596,7 @@ export default function Home() {
                   transition: "all 0.3s",
                 }}
               >
-                Submit Now ↗
+                Hantar Resit
               </a>
             </div>
           </div>
@@ -680,6 +695,41 @@ export default function Home() {
           }
           .heroCtaDesktop { display: none; }
           .heroCtaMobile { display: inline-block; }
+          .qrInstructionText { font-size: clamp(0.88rem, 2.4vw, 1.05rem); }
+        }
+        @media (min-width: 768px) {
+          .heroSection {
+            min-height: 120vh !important;
+          }
+          .heroBgImage {
+            display: none !important;
+          }
+          .heroBgDesktop {
+            display: block !important;
+          }
+          .heroImageSeamFade {
+            height: clamp(80px, 14vh, 120px) !important;
+            background: linear-gradient(to top, rgba(255,223,67,0.94) 0%, rgba(255,223,67,0.7) 48%, rgba(255,223,67,0) 100%) !important;
+          }
+          .heroBottomOverlay {
+            min-height: clamp(140px, 24vh, 200px) !important;
+            padding-top: 3rem !important;
+            background: linear-gradient(to top, rgba(255,223,67,0.94) 0%, rgba(255,223,67,0.7) 48%, rgba(255,223,67,0) 100%) !important;
+          }
+          #submit-section {
+            background: linear-gradient(to bottom, #ffdf43 0%, #ffdf43 56%, rgba(255,223,67,0.7) 70%, rgba(245,237,232,0.96) 88%, #F5EDE8 100%) !important;
+            padding-top: 2.8rem !important;
+          }
+          .prizeDeodorantImg {
+            top: -14rem !important;
+          }
+          .prizeInstructionBox {
+            margin-top: 6rem !important;
+            padding-top: 2.5rem !important;
+          }
+          .prizeInstructionItem {
+            padding: 1.5rem 0.8rem !important;
+          }
         }
         @keyframes bounce {
           0%, 100% { transform: translateX(-50%) translateY(0); }
