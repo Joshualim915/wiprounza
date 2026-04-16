@@ -41,7 +41,7 @@ export default function Home() {
             height: "100%",
             objectFit: "cover",
             objectPosition: "center top",
-            background: "#ffdf43",
+background: "linear-gradient(to bottom, #ffdf43 0%, #ffdf43 60%, rgba(255,223,67,0.5) 80%, #F9F0EA 100%)",
             zIndex: 0,
           }}
         />
@@ -67,7 +67,7 @@ export default function Home() {
           left: 0,
           right: 0,
           bottom: 0,
-          height: "clamp(150px, 26vh, 250px)",
+          height: "clamp(50px, 9vh, 90px)",
           background: "linear-gradient(to top, rgba(255,223,67,0.99) 0%, rgba(255,223,67,0.96) 60%, rgba(255,223,67,0.86) 78%, rgba(255,223,67,0) 100%)",
           zIndex: 1,
           pointerEvents: "none",
@@ -81,7 +81,7 @@ export default function Home() {
           bottom: 0,
           zIndex: 10,
           padding: "clamp(1.5rem, 4vw, 3rem) 1.25rem 2rem",
-          background: "linear-gradient(to top, rgba(255,223,67,0.99) 0%, rgba(255,223,67,0.99) 58%, rgba(255,223,67,0.9) 78%, rgba(255,223,67,0) 100%)",
+          background: "transparent",
         }}>
           <div className="heroBottomContent" style={{
             maxWidth: "900px",
@@ -89,68 +89,6 @@ export default function Home() {
             textAlign: "center",
             transform: "translateY(6px)",
           }}>
-            <p className="heroPeriod" style={{
-              color: "#5A3518",
-              fontFamily: "'Outfit', sans-serif",
-              fontSize: "clamp(0.72rem, 1.8vw, 0.85rem)",
-              letterSpacing: "0.26em",
-              textTransform: "uppercase",
-              marginBottom: "0.75rem",
-            }}>
-              May 1 - June 30, 2026
-            </p>
-
-            <h1 className="heroTitle" style={{
-              fontFamily: "'Playfair Display', serif",
-              fontSize: "clamp(1.6rem, 4.8vw, 2.7rem)",
-              color: "#3B230F",
-              lineHeight: 1.15,
-              marginBottom: "1.2rem",
-              textShadow: "0 1px 0 rgba(255,255,255,0.2)",
-            }}>
-              Shop & Win
-              <br />
-              <span style={{ fontStyle: "italic", color: "#5A3518" }}>Enchanting Prizes</span>
-            </h1>
-
-            <a
-              className="heroCta heroCtaDesktop"
-              href="#submit-section"
-              style={{
-                background: "#E8C872",
-                color: "#2D1A1F",
-                fontFamily: "'Outfit', sans-serif",
-                fontSize: "0.8rem",
-                fontWeight: 500,
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-                padding: "0.72rem 1.8rem",
-                textDecoration: "none",
-                transition: "all 0.3s",
-              }}
-            >
-              Hantar Resit
-            </a>
-            <a
-              className="heroCta heroCtaMobile"
-              href="https://enchanteur.com.my/contest-submit"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                background: "#E8C872",
-                color: "#2D1A1F",
-                fontFamily: "'Outfit', sans-serif",
-                fontSize: "0.8rem",
-                fontWeight: 500,
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-                padding: "0.72rem 1.8rem",
-                textDecoration: "none",
-                transition: "all 0.3s",
-              }}
-            >
-              Hantar Resit
-            </a>
           </div>
         </div>
       </section>
@@ -205,7 +143,7 @@ export default function Home() {
                 <p style={{
                   fontFamily: "'Outfit', sans-serif",
                   color: "#2D1A1F",
-                  fontSize: "clamp(0.88rem, 2.4vw, 1rem)",
+                  fontSize: "clamp(1rem, 2.8vw, 1.5rem)",
                   fontWeight: 600,
                 }}>
                   1 May - 30 June 2026
@@ -234,7 +172,7 @@ export default function Home() {
                     marginBottom: "0.85rem",
                   }}>
                     <img
-                      src="/enchanteur-grand-prize.png"
+                      src="/enchanteur-grand-prize-new.png"
                       alt="Grand prize"
                       style={{
                         maxWidth: "100%",
@@ -325,8 +263,7 @@ export default function Home() {
                     width: "clamp(185px, 48vw, 250px)",
                     height: "clamp(270px, 60vw, 380px)",
                     objectFit: "contain",
-                    objectPosition: "center bottom",
-                    background: "transparent",
+objectPosition: "center bottom",
                     borderRadius: 0,
                     position: "absolute",
                     top: "-9rem",
@@ -527,8 +464,8 @@ export default function Home() {
       {/* Submit Section */}
       <section id="submit-section" style={{
         order: 2,
-        padding: "2.8rem 1.5rem 2.1rem",
-        background: "linear-gradient(to bottom, #ffdf43 0%, #ffdf43 56%, rgba(255,223,67,0.7) 70%, rgba(245,237,232,0.96) 88%, #F5EDE8 100%)",
+        padding: "0rem 1.5rem 2.1rem",
+        background: "#ffdf43",
       }}>
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
           <div style={{
@@ -548,6 +485,15 @@ export default function Home() {
               background: "linear-gradient(to right, transparent, #C9A85C, transparent)",
             }} />
 
+            <h2 style={{
+              fontFamily: "'Playfair Display', serif",
+              fontSize: "clamp(1.6rem, 4vw, 2.2rem)",
+              color: "#2D1A1F",
+              marginBottom: "1.5rem",
+            }}>
+              Shop & Win <span style={{ fontStyle: "italic", color: "#C9A85C" }}>Enchanting Prizes</span>
+            </h2>
+
             <p style={{
               color: "#666",
               fontFamily: "'Outfit', sans-serif",
@@ -556,7 +502,7 @@ export default function Home() {
               maxWidth: "400px",
               margin: "0 auto 2.5rem",
             }}>
-              <span className="qrInstructionText">Beli produk Enchanteur bernilai RM25 dalam satu resit (termasuk 1 unit deodoran). Imbas kod QR untuk hantar resit.</span>
+              <span className="qrInstructionText">Beli mana-mana produk Enchanteur bernilai RM25 dan ke atas dalam satu resit. Imbas kod QR atau klik butang di bawah untuk hantar resit.</span>
             </p>
 
             {/* QR Code Placeholder */}
@@ -620,6 +566,14 @@ export default function Home() {
           }}
         />
         <p style={{
+          color: "rgba(255,255,255,0.7)",
+          fontFamily: "'Outfit', sans-serif",
+          fontSize: "clamp(0.8rem, 1.8vw, 0.95rem)",
+          marginBottom: "1rem",
+        }}>
+          Untuk mengetahui lebih lanjut, sila layari lamina web <a href="https://enchanteur.com.my/" target="_blank" rel="noopener noreferrer" style={{ color: "#E8C872", fontWeight: 600, textDecoration: "underline" }}>Enchanteur</a>.
+        </p>
+        <p style={{
           color: "rgba(255,255,255,0.5)",
           fontFamily: "'Outfit', sans-serif",
           fontSize: "0.875rem",
@@ -663,21 +617,21 @@ export default function Home() {
         .heroCtaMobile { display: none; }
         @media (max-width: 767px) {
           .heroSection {
-            min-height: calc(100vw * 0.67 + 170px) !important;
+            min-height: calc(100vw * 0.536 + 136px) !important;
           }
           .heroBgImage {
             object-fit: contain !important;
             object-position: center top !important;
           }
           .heroImageSeamFade {
-            height: clamp(140px, 24vh, 220px) !important;
+            height: clamp(50px, 9vh, 90px) !important;
             background: linear-gradient(to top, rgba(255,223,67,0.995) 0%, rgba(255,223,67,0.97) 60%, rgba(255,223,67,0.9) 80%, rgba(255,223,67,0) 100%) !important;
           }
           .heroBottomOverlay {
-            min-height: clamp(160px, 24vh, 215px) !important;
+            min-height: clamp(60px, 24vh, 60px) !important;
             display: flex !important;
             align-items: flex-end !important;
-            padding: 0.3rem 1rem 0.75rem !important;
+            padding: 0.3rem 1rem 0rem !important;
             background: linear-gradient(to top, rgba(255,223,67,0.995) 0%, rgba(255,223,67,0.995) 56%, rgba(255,223,67,0.92) 78%, rgba(255,223,67,0) 100%) !important;
           }
           .heroBottomContent {
