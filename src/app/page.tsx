@@ -310,7 +310,7 @@ objectPosition: "center bottom",
                         fontWeight: 700,
                         margin: 0,
                       }}>
-                        Beli produk Enchanteur bernilai RM25 dalam satu resit (termasuk 1 unit deodoran)
+                        Beli produk Enchanteur bernilai RM25 dalam satu resit
                       </p>
                     </div>
                   </div>
@@ -360,7 +360,7 @@ objectPosition: "center bottom",
                   marginTop: "0.55rem",
                   textAlign: "center",
                 }}>
-                  *Tertakluk terma & syarat
+                  <a href="https://drive.google.com/file/d/1zhKSR0p1FbGeP4tr-RV74OZl3wQI14Jy/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: "#666", textDecoration: "underline" }}>*Tertakluk terma & syarat</a>
                 </p>
               </div>
             </div>
@@ -571,7 +571,7 @@ objectPosition: "center bottom",
           fontSize: "clamp(0.8rem, 1.8vw, 0.95rem)",
           marginBottom: "1rem",
         }}>
-          Untuk mengetahui lebih lanjut, sila layari lamina web <a href="https://enchanteur.com.my/" target="_blank" rel="noopener noreferrer" style={{ color: "#E8C872", fontWeight: 600, textDecoration: "underline" }}>Enchanteur</a>.
+          Untuk mengetahui lebih lanjut, sila layari web <a href="https://enchanteur.com.my/" target="_blank" rel="noopener noreferrer" style={{ color: "#E8C872", fontWeight: 600, textDecoration: "underline" }}>Enchanteur</a>.
         </p>
         <p style={{
           color: "rgba(255,255,255,0.5)",
@@ -586,7 +586,7 @@ objectPosition: "center bottom",
           fontFamily: "'Outfit', sans-serif",
           fontSize: "0.75rem",
         }}>
-          Terms & conditions apply. Prizes are given randomly via instant disbursement.
+          <a href="https://drive.google.com/file/d/1zhKSR0p1FbGeP4tr-RV74OZl3wQI14Jy/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "underline" }}>Terms & conditions</a> apply. Prizes are given randomly via instant disbursement.
         </p>
         <div style={{
           marginTop: "2rem",
