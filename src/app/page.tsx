@@ -515,7 +515,7 @@ objectPosition: "center bottom",
               boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
             }}>
               <img 
-                src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://enchanteur.com.my/contest-submit" 
+                src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=tngdwallet://client/dl/mp?mpid=2171020226994086&page=deal/9ac3729f-5f89-4f66-b684-b64d892c77c8" 
                 alt="QR Code"
                 style={{ width: "180px", height: "180px" }}
               />
@@ -523,7 +523,7 @@ objectPosition: "center bottom",
 
             <div>
               <a 
-                href="https://enchanteur.com.my/contest-submit"
+                href="tngdwallet://client/dl/mp?mpid=2171020226994086&page=contest/9ac3729f-5f89-4f66-b684-b64d892c77c8/info"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
