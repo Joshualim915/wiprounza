@@ -360,7 +360,7 @@ objectPosition: "center bottom",
                   marginTop: "0.55rem",
                   textAlign: "center",
                 }}>
-                  <a href="https://drive.google.com/file/d/1zhKSR0p1FbGeP4tr-RV74OZl3wQI14Jy/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: "#666", textDecoration: "underline" }}>*Tertakluk terma & syarat</a>
+                  <a href="https://drive.google.com/file/d/1rsjd9HIWp6Gdf5clA9IEbKVDdg4AGShN/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: "#666", textDecoration: "underline" }}>*Tertakluk terma & syarat</a>
                 </p>
               </div>
             </div>
@@ -544,6 +544,38 @@ objectPosition: "center bottom",
               >
                 Hantar Resit
               </a>
+              <p style={{
+                marginTop: "0.9rem",
+                marginBottom: "0.7rem",
+                color: "#5A4A4E",
+                fontFamily: "'Outfit', sans-serif",
+                fontSize: "0.88rem",
+                fontWeight: 400,
+              }}>
+                Jika anda menghadapi sebarang masalah, sila hubungi kami melalui WhatsApp.
+              </p>
+              <a
+                href="https://wa.me/60178695192?text=Enchanteur%20Contest%20-%20I%20have%20some%20issues%20with%20my%20submission"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                  background: "#25D366",
+                  color: "#FFFFFF",
+                  fontFamily: "'Outfit', sans-serif",
+                  fontSize: "0.84rem",
+                  fontWeight: 600,
+                  letterSpacing: "0.04em",
+                  textTransform: "uppercase",
+                  padding: "0.8rem 1.8rem",
+                  textDecoration: "none",
+                  borderRadius: "999px",
+                }}
+              >
+                Hubungi WhatsApp
+              </a>
             </div>
           </div>
         </div>
@@ -586,7 +618,7 @@ objectPosition: "center bottom",
           fontFamily: "'Outfit', sans-serif",
           fontSize: "0.75rem",
         }}>
-          <a href="https://drive.google.com/file/d/1zhKSR0p1FbGeP4tr-RV74OZl3wQI14Jy/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "underline" }}>Terms & conditions</a> apply. Prizes are given randomly via instant disbursement.
+          <a href="https://drive.google.com/file/d/1rsjd9HIWp6Gdf5clA9IEbKVDdg4AGShN/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "underline" }}>Terms & conditions</a> apply. Prizes are given randomly via instant disbursement.
         </p>
         <div style={{
           marginTop: "2rem",
